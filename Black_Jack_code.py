@@ -210,7 +210,9 @@ def push(player,dealer):
 
 # In[ ]:
 
-
+  
+player_chips = Chips()    
+    # Set up the Player's chips
 while True:
     print("Welcome to this game of Black Jack, enjoy!")
 
@@ -225,10 +227,6 @@ while True:
     dealer_hand.add_card(deck.deal())
     dealer_hand.add_card(deck.deal())
     # Create & shuffle the deck, deal two cards to each player
-
-    
-    player_chips = Chips()    
-    # Set up the Player's chips
     
     take_bet(player_chips)
     # Prompt the Player for their bet
